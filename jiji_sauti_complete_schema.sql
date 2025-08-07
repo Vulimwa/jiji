@@ -835,8 +835,6 @@ CREATE INDEX idx_cms_content_type ON cms_content(content_type);
 -- ROW LEVEL SECURITY SETUP
 -- =====================================================
 
--- Enable RLS on all tables
-ALTER TABLE spatial_ref_sys ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_profiles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE government_officials ENABLE ROW LEVEL SECURITY;
 ALTER TABLE civic_issues ENABLE ROW LEVEL SECURITY;
@@ -878,7 +876,7 @@ ALTER TABLE flash_challenge_responses ENABLE ROW LEVEL SECURITY;
 ALTER TABLE document_questions ENABLE ROW LEVEL SECURITY;
 
 -- Spatial ref sys policy
-CREATE POLICY "Allow read access to spatial_ref_sys" ON spatial_ref_sys FOR SELECT USING (true);
+-- CREATE POLICY "Allow read access to spatial_ref_sys" ON spatial_ref_sys FOR SELECT USING (true);
 
 -- User Profiles RLS
 CREATE POLICY "Users can view public profiles" ON user_profiles FOR SELECT USING (

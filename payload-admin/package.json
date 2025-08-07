@@ -1,0 +1,41 @@
+{
+  "name": "jiji-sauti-admin",
+  "version": "1.0.0",
+  "description": "JijiSauti Admin Panel powered by Payload CMS",
+  "main": "src/server.ts",
+  "scripts": {
+    "build": "payload build",
+    "dev": "nodemon",
+    "start": "node dist/server.js",
+    "generate:types": "payload generate:types",
+    "generate:graphQLSchema": "payload generate:graphQLSchema"
+  },
+  "dependencies": {
+    "@payloadcms/bundler-webpack": "^1.0.7",
+    "@payloadcms/db-postgres": "^1.0.7",
+    "@payloadcms/editor-slate": "^1.0.7",
+    "@payloadcms/plugin-cloud-storage": "^1.0.7",
+    "@payloadcms/plugin-seo": "^2.0.7",
+    "@payloadcms/richtext-slate": "^1.0.7",
+    "@supabase/supabase-js": "^2.50.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "payload": "^2.0.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts,js,json",
+    "exec": "ts-node src/server.ts"
+  }
+}

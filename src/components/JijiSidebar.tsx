@@ -23,7 +23,7 @@ const menuItems = [
 
   // { id: 'collaboration', label: 'Collaboration Zone', icon: UsersRound, description: 'Self-organize around issues' },
   // { id: 'campaigns', label: 'Campaigns', icon: Flag, description: 'Community initiatives' },
-  // { id: 'civic-match', label: 'Civic Match', icon: Target, description: 'Strategic stakeholder engagement' },
+  { id: 'civic-match', label: 'Civic Match', icon: Target, description: 'Strategic stakeholder engagement' },
   // { id: 'flash-challenges', label: 'Flash Challenges', icon: Zap, description: 'Rapid civic action challenges' },
   // { id: 'jiji-docs', label: 'JiJi Docs', icon: BookOpen, description: 'Civic document insights' },
   { id: 'profile', label: 'Profile', icon: User, description: 'Manage your profile' },
